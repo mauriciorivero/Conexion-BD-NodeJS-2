@@ -64,7 +64,47 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `primer_nombre`, `primer_apellido`, `fecha_nacimiento`) VALUES
-(1, 'Mauricio', 'Rivero', '1984-01-02');
+(1, 'Mauricio', 'Rivero', '1984-01-02'),
+(2, 'Ana', 'García', '1990-05-15'),
+(3, 'Carlos', 'López', '1985-08-20'),
+(4, 'María', 'Rodríguez', '1992-03-10'),
+(5, 'Juan', 'Martínez', '1988-11-25'),
+(6, 'Laura', 'Hernández', '1995-07-05'),
+(7, 'Pedro', 'González', '1982-09-12'),
+(8, 'Sofía', 'Pérez', '1998-01-30'),
+(9, 'Diego', 'Sánchez', '1987-04-18'),
+(10, 'Valentina', 'Ramírez', '1993-12-08'),
+(11, 'Javier', 'Torres', '1980-06-22'),
+(12, 'Isabella', 'Flores', '1996-02-14'),
+(13, 'Andrés', 'Díaz', '1989-10-03'),
+(14, 'Camila', 'Vargas', '1994-08-28'),
+(15, 'Gabriel', 'Rojas', '1983-05-07'),
+(16, 'Daniela', 'Mendoza', '1991-11-19'),
+(17, 'Alejandro', 'Cruz', '1986-03-25'),
+(18, 'Lucía', 'Morales', '1997-09-09'),
+(19, 'Mateo', 'Ortiz', '1981-12-31'),
+(20, 'Mariana', 'Gutiérrez', '1999-06-15'),
+(21, 'Santiago', 'Castillo', '1984-02-28'),
+(22, 'Victoria', 'Reyes', '1990-10-10'),
+(23, 'Nicolás', 'Jiménez', '1985-07-20'),
+(24, 'Fernanda', 'Ruiz', '1993-04-05'),
+(25, 'Emilio', 'Alvarez', '1988-01-12'),
+(26, 'Catalina', 'Romero', '1996-08-22'),
+(27, 'Julián', 'Vásquez', '1982-11-01'),
+(28, 'Antonia', 'Castro', '1995-05-18'),
+(29, 'Samuel', 'Gómez', '1989-03-30'),
+(30, 'Elena', 'Fernández', '1994-12-12'),
+(31, 'Tomás', 'Moreno', '1983-09-05'),
+(32, 'Martina', 'Herrera', '1991-06-25'),
+(33, 'Lucas', 'Medina', '1987-02-08'),
+(34, 'Paula', 'Aguilar', '1998-10-20'),
+(35, 'Joaquín', 'Suárez', '1980-04-15'),
+(36, 'Valeria', 'Benítez', '1992-07-30'),
+(37, 'Felipe', 'Salazar', '1986-11-08'),
+(38, 'Gabriela', 'Pardo', '1997-01-22'),
+(39, 'Simón', 'Cabrera', '1981-08-14'),
+(40, 'Sara', 'Delgado', '1999-03-05'),
+(41, 'Manuel', 'Peña', '1985-05-28');
 
 --
 -- Índices para tablas volcadas
@@ -110,7 +150,7 @@ ALTER TABLE `telefono`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- Restricciones para tablas volcadas
