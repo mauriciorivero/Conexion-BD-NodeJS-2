@@ -3,6 +3,17 @@ const pool = require('../config/db');
 // Modelo para interactuar con la tabla 'usuario'
 const UsuarioModel = {
     // Obtener todos los usuarios
+
+    /**
+     * async: Palabra clave que convierte una función en asíncrona.
+     * 
+     * Piénsalo como pedir comida a domicilio:
+     * 1. Haces el pedido (llamas a la función).
+     * 2. No te quedas congelado en la puerta esperando; puedes ver TV o hacer otras cosas (el programa sigue ejecutándose).
+     * 3. Cuando llega el repartidor (la base de datos responde), recibes tu pedido y continúas.
+     * 
+     * Al marcarla como 'async', nos permite usar 'await' adentro para decir "espera aquí a que llegue el dato antes de seguir".
+     */
     getAllUsuarios: async () => {
         try {
             const [rows] = await pool.query('SELECT * FROM usuario');
