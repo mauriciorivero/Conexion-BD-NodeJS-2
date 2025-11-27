@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+
+        <!-- Formulario para crear/editar usuario -->
+        <div class="form-container">
+            <h2 id="form-title">Crear Nuevo Usuario</h2>
+            <form id="usuario-form">
+                <input type="hidden" id="usuario-id">
+                <div class="form-group">
+                    <label for="primer_nombre">Primer Nombre:</label>
+                    <input type="text" id="primer_nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="primer_apellido">Primer Apellido:</label>
+                    <input type="text" id="primer_apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="btn-submit">Guardar</button>
+                    <button type="button" id="btn-cancel" style="display: none;">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Tabla de usuarios -->
+        <div class="table-container">
+            <h2>Lista de Usuarios</h2>
+            <table id="usuarios-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Fecha Nacimiento</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los usuarios se cargarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

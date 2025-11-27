@@ -30,6 +30,7 @@ El proyecto sigue una arquitectura en capas para separar responsabilidades:
 
 ## Ejecución
 
+### Backend
 Para iniciar el servidor en modo desarrollo (si tienes nodemon instalado) o producción:
 
 ```bash
@@ -39,6 +40,17 @@ node app.js
 ```
 
 El servidor correrá en `http://localhost:3000`.
+
+### Frontend
+La aplicación cuenta con un frontend básico en HTML, CSS y JavaScript ubicado en la carpeta `frontend`.
+
+Para ejecutarlo:
+1. Asegúrate de que el backend esté corriendo.
+2. Abre el archivo `frontend/index.html` en tu navegador web.
+   - Puedes hacerlo simplemente haciendo doble clic en el archivo o arrastrándolo a una ventana del navegador.
+   - También puedes usar una extensión como "Live Server" en VS Code para servirlo.
+
+La aplicación frontend se conectará automáticamente a `http://localhost:3000` para gestionar los usuarios.
 
 ## Documentación de la API
 
